@@ -1,0 +1,67 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS tests</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="super">
+    <script>
+        var radius=2;
+        var pi=3.14;
+        var S=pi*radius**2;
+        var phrase1 = "Time to live remaining is ";
+        var phrase2 = " minutes";
+        // String //
+        document.write(phrase1 + S + phrase2);
+        console.log(S);
+
+        var number = S;
+        number*=6;
+        console.log(number);
+        number/=2;
+        console.log(number);
+        number**=2;
+        console.log(number);
+        console.log( (number>0 ) && (pi > 0) && (S>0));  // AND
+        console.log( (number>0 ) || (pi < 0) || (s>0));  // OR
+        console.log( !(number<0 ) );  // NOT
+
+        messageText = ( S>9) ? "Surfacesquare is enough": "Not  enough!";
+        console.log(messageText);
+
+        if (S > 13) {
+            alert("The END is near!");
+        }
+        else {
+            alert("The END is not near!");
+        }
+
+        switch (S) {
+            case 12.56:
+            console.log("S = " + S)
+            break;
+            case 9.25: 
+            console.log("S = " + S)
+            break;
+        }
+        document.write("<br />");
+        for (i=1; i<=5; i++) {
+            document.write(phrase1 + (S+i) + phrase2 + "<br />");
+        }
+
+
+
+    //    alert("Don't press OK button! \n You'll kill the world!")
+    </script>
+
+  
+    </h1>
+
+    
+    
+</body>
+</html>

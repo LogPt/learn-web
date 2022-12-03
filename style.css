@@ -1,0 +1,11 @@
+h1 {
+
+    flex-direction: column;
+color: blue;
+font-size: 45pt;
+font-style: verdana;
+text-shadow:  12px 6px  10px orange;
+text-align: center;
+}
+
+

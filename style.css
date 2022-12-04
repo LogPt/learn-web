@@ -1,11 +1,23 @@
 h1 {
-
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 color: blue;
-font-size: 45pt;
+font-size: 23pt;
 font-style: verdana;
 text-shadow:  12px 6px  10px orange;
 text-align: center;
 }
+
+.scontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+font-style: verdana;
+text-shadow:  12px 6px  10px orange;
+text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 
 

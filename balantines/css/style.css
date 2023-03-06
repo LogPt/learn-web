@@ -1,0 +1,110 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  background-image: url(../images/bg.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 46px;
+  display: flex;
+
+}
+
+.menu ul {
+  display: flex;
+  padding-left: 34px;
+  padding-top: 37px;
+}
+
+.menu li+li {
+  margin-left: 25px;
+}
+
+.menu a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.slider {
+  text-decoration: none;
+  position: relative;
+  /* padding-top: 111px; иедально для моего экрана*/
+  padding-top: calc(50vh - 111px - 0.5 * (141px + 15px + 84px + 46px + 20px));
+
+}
+
+.item {
+  text-align: left;
+}
+
+.title {
+  padding-top: calc();
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 140px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  margin-bottom: 46px;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+}
+
+.slick-dots button {
+  font-size: 0;
+  padding: 0;
+  border: none;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.slick-dots li+li {
+  padding-left: 30px;
+}
+
+.slick-active button {
+  /* background: #c4c4c400; */
+  background: transparent;
+}

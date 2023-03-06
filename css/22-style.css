@@ -1,0 +1,121 @@
+
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100vw;
+  font-size: 30px;
+  color: red;
+  margin-bottom: 60px;
+}
+
+.item {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin: 60px 40px;
+}
+
+.name {
+  margin: auto;
+}
+
+.item-perspective {
+  transform: perspective(200px) rotateX(25deg);
+}
+
+.item-rotate {
+  transform: rotate(45deg);
+}
+
+.item-translate {
+  transform: translate(45px, 30%);
+}
+
+.container-2 {
+width: 70vw;
+margin: auto
+}
+
+
+
+.wrap {
+  display: inline-block;
+  margin: 40px 20px;
+  width: 170px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 15px;
+  background: rgba(228, 225, 228, .5);
+}
+
+.item-2 {
+  transition: all 0.8s ease-in-out;
+}
+
+.one,
+.four,
+.seven,
+.ten {
+  background: rgba(135, 86, 120, .4);
+}
+
+.two,
+.five,
+.eight,
+.eleven {
+  background: rgba(0, 228, 246, .4);
+}
+
+.three,
+.six,
+.nine {
+  background: rgba(255, 153, 0, .4);
+}
+
+.one:hover {
+  transform: translateX(30px);
+}
+
+.two:hover {
+  transform: translateY(-15px);
+}
+
+.three:hover {
+  transform: translate(-20px, 20px);
+}
+
+.four:hover {
+  transform: scaleX(-1)
+}
+
+.five:hover {
+  transform: scaleY(1.2)
+}
+
+.six:hover {
+  transform: scale(1.2, 0.5)
+}
+
+.seven:hover {
+  transform: rotate(720deg)
+}
+
+.eight:hover {
+  transform: skewX(20deg)
+}
+
+.nine:hover {
+  transform: skewY(-20deg)
+}
+
+.ten:hover {
+  transform: skew(-20deg, 20deg)
+}
+
+.eleven:hover {
+  transform: matrix(1.2, 0, 0.5, 1.2, 50, 0)
+}

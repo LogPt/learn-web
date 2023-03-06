@@ -1,0 +1,199 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+h1 {
+    color: blue;
+    font-size: 26pt;
+    font-style: verdana;
+    text-shadow: 12px 6px 10px lightblue;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20pt;
+    font-style: verdana;
+    text-shadow: 12px 6px 10px grey;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1530px;
+    height: 900px;
+}
+
+/* section's description */
+.section {
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    width: 100%;
+}
+
+.section__top {
+    justify-content: start;
+    margin-top: 80px;
+}
+
+.section__center {
+    justify-content: center;
+}
+
+.section__bottom {
+    justify-content: end;
+    margin-bottom: 80px;
+}
+
+/* block's description */
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.block__top:first-child {
+    margin-left: 80px;
+}
+
+.block__top:not(:last-child) {
+    margin-right: 20px;
+}
+
+.block__center:not(:last-child) {
+    margin-right: 20px;
+}
+
+.block__bottom {
+    text-align: right;
+    align-content: flex-end;
+}
+
+.block__bottom {
+    margin-right: 20px;
+}
+
+.block__bottom:last-child {
+    margin-right: 80px;
+}
+
+/* button's description */
+.btn {
+    font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    line-height: 100%;
+}
+
+.btn__center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn__bottom {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.btn__1 {
+    font-size: 14px;
+    width: 140px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.btn__2 {
+    font-size: 12px;
+    width: 110px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+.btn__3 {
+    font-size: 10px;
+    width: 80px;
+    height: 24px;
+    border-radius: 2px;
+}
+
+.btn__blue {
+    background-color: #00A9FF;
+}
+
+.btn__blue:focus {
+    border: 3px solid rgba(0, 169, 255, 0.4);
+    transition: 0.5s;
+}
+
+.btn__green {
+    background-color: #6BD82E;
+}
+
+.btn__green:focus {
+    border: 3px solid rgba(107, 216, 46, 0.4);
+    transition: 0.5s;
+}
+
+.btn__orange {
+    background-color: #FF9A00;
+}
+
+.btn__orange:focus {
+    border: 3px solid rgba(255, 154, 0, 0.4);
+    transition: 0.5s;
+}
+
+.btn__red {
+    background-color: #FF4345;
+}
+
+.btn__red:focus {
+    border: 3px solid rgba(255, 67, 69, 0.4);
+    transition: 0.5s;
+}
+
+.btn__white {
+    background-color: #FFFFFF;
+    border: 1px solid #D2CECE;
+    color: #000000;
+}
+
+.btn__white:focus {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.btn__transparence {
+    background-color: #F9F9F9;
+    border: 1px solid #D2CECE;
+    color: #9B9B9B;
+}
+
+.btn__transparence:focus {
+    border: 3px solid rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.btn:hover {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}

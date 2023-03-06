@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vw;
+  max-width: 1200px;
+}
+
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+
+.title-slider {
+  margin: 20px auto;
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.image-2 {
+  width: 600px;
+}
+
+.slider {
+  position: relative;
+  width: 800px;
+  height: 540px;
+  background-color: lightgray;
+}
+
+.slider_before {
+  /* width: 200px; */
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-image: url(../images/Italia-Sud.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.slider_after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../images/Italia-Toscana.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.slider_resize {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: red;
+  cursor: e-resize;
+}
+
+.slider_resize::after {
+  position: absolute;
+  content: '<';
+  color: red;
+  font-size: 60px;
+  font-weight: 900;
+  top: 50%;
+  right: 10px;
+}
+
+.slider_resize::before {
+  position: absolute;
+  content: '>';
+  color: red;
+  font-size: 60px;
+  font-weight: 900;
+  top: 50%;
+  left: 10px;
+}
+
+
+
+.footer-text {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.tlf-text {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+  font-size: 24px;
+}

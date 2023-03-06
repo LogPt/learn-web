@@ -1,0 +1,36 @@
+  body {
+    display: flex;
+    justify-content: center;
+    background: #000;
+    color: #ffe919;
+  }
+
+   .titles {
+     position: absolute;
+
+     width: 95%;
+     height: 450%;
+     bottom: 0;
+     font-size: 32px;
+     line-height: 1.5;
+     text-align: justify;
+     transform-origin: 50% 100%;
+     transform: perspective(500px) rotateX(25deg);
+     overflow: hidden;
+   }
+
+      .content {
+        position: absolute;
+        top: 100%;
+        animation: scroll 90s linear infinite;
+      }
+
+         @keyframes scroll {
+           from {
+             top: 100%;
+           }
+
+           to {
+             top: -100%;
+           }
+         }

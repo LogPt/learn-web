@@ -1,0 +1,184 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #1976D5;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+
+
+.block02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 1000px;
+}
+
+.container {
+  width: 1000px;
+  height: 1035px;
+  margin: auto;
+}
+
+header {
+  height: 150px;
+  background-color: #C1C1C1;
+  margin-bottom: 20px;
+}
+
+header:hover {
+  background-color:  #484a4b;
+border: 5px solid #C1C1C1;
+}
+
+nav {
+  width: 1000px;
+  height: 75px;
+  background: #EB1E63;
+  margin-bottom: 20px;
+}
+
+nav:hover{
+  background:  #f05f8f;
+  border: 5px solid #EB1E63;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside {
+  width: 360px;
+  height: 600px;
+  background: #3A3E47;
+}
+
+aside:hover{
+  background: #556792;
+}
+
+figure {
+  margin: 0 auto;
+  width: 320px;
+  height: 480px;
+  background: #637B8B;
+}
+
+figure:hover{
+  background: #3d6986;
+}
+
+.aside .main .figure {
+  height: 90px;
+  margin: 0 auto;
+}
+
+.figure {
+  height: 102px;
+}
+
+
+.img {
+  padding-top: 15px;
+  margin: 0 auto;
+  width: 280px;
+  height: 350px;
+  background-color: #85D32C;
+}
+
+.img:hover{
+  background-color: #81e411;
+}
+
+main {
+  width: 620px;
+  height: 600px;
+  background-color: #6BB01A;
+  margin-bottom: 20px;
+}
+
+main:hover{
+  background-color: #93d34b;
+  /* border: 5px solid #6BB01A; */
+}
+
+.section-name {
+  margin-bottom: 6px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0 auto;
+  width: 580px;
+  height: 235px;
+  background-color: #FFC10A;
+}
+section:hover{
+  background-color: #e7bd3f;
+  border: 5px solid #FFC10A;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 200px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffff;
+  background-color: #4176FF;
+  border: none;
+}
+
+button:hover{
+  background-color: #5172c5;
+  border: 5px solid #4176FF;
+}
+
+
+article {
+  margin: auto;
+  width: 580px;
+  height: 235px;
+  background: #FF800A;
+}
+article:hover {
+  background-color: #f39237;
+  border: 5px solid #FF800A;
+}
+
+footer {
+  height: 150px;
+  background-color: #000000;
+}
+footer:hover{
+  background-color: #292828;
+  border: 5px solid #000000;
+}

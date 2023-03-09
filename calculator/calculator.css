@@ -1,6 +1,6 @@
 html {
   background-color: #93a2f5;
-  background-size: 3px;
+  /* background-size: 3px; */
   font-family: Arial, sans-serif;
 }
 
@@ -11,31 +11,33 @@ html {
 }
 
 .wrapper {
-  width: 800px;
-  margin: 100px auto;
+  width: 300px;
+  margin: 50px auto;
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 10px;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 50px;
 }
 
 h1,
 h2 {
   text-align: center;
   color: #fff;
-  margin: 0;
   margin-bottom: 15px;
 }
 
-.number,
-.operand,
-.equals,
+
 .string,
-.result {
-  width: 40px;
-  height: 40px;
+.result,
+.btn {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 12px;
   /* margin: 0 auto; */
   text-align: center;
   border: 3px solid #ee307f;
@@ -44,9 +46,23 @@ h2 {
   color: #000000;
 }
 
+.btn {
+  flex: 20%;
+  max-width: 50px;
+}
+
+.btn:active {
+ background-color: #94c6e7;
+}
+
 .string,
 .result {
-  width: 400px;
-  height: 40px;
-  margin-bottom: 10px;
+  text-align: right;
+  width: 300px;
 }
+
+/* .col-6 — до 576px;
+.col-sm-6 — больше 576px;
+.col-md-6 — больше 768px;
+.col-lg-6 — больше 992px;
+.col-xl-6 — больше 1200px. */

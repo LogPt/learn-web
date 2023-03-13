@@ -8,7 +8,7 @@ var S=pi*radius**2;
 
 // String //
 if(radius <0){
-    alert("You crazy, man?!\n " + radius + " is negative munber! \n  Reload the page and try again!")
+    alert("You're crazy, man?!\n " + radius + " is negative munber! \n  Reload the page and try again!")
 }
 else if(radius > 10){
     var doOrNot= confirm("Really wanna fill the page by "+ radius + " strings?")

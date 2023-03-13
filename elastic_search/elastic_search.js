@@ -6,10 +6,11 @@ const stations = [];
 fetch(api)
   .then(res => res.json())
   .then(data => {
-    // console.log('data >>>>> ', data);
+     console.log('data >>>>> ', data);
     data.forEach(line => {
       stations.push(...line.stations);
     })
+    console.log('stations >>>>> ', stations);
   });
 
 const searchInput = document.querySelector('.search');

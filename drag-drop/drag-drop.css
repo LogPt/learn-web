@@ -17,4 +17,17 @@
   width: auto;
   height: auto;
   margin: 15px 25px;
+  cursor: grab;
+}
+
+.img:active {
+  cursor: grabbing;
+}
+
+.hold {
+  border: 2px solid #ff85e4;
+}
+
+.hide {
+  display: none;
 }

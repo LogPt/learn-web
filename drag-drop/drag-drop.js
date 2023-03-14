@@ -1,5 +1,6 @@
 const zone1 = document.querySelector('.zone-1');
 const zone2 = document.querySelector('.zone-2');
+
 function allowDrop(event) {
   event.preventDefault();
 };
@@ -40,6 +41,10 @@ function drag(event) {
   event.dataTransfer.setData('id', event.target.id);
   let item = event.dataTransfer.getData('id');
   console.log(event.target.id);
+  event.target.classList.add('hold');
+  // setTimeout(() => {
+  //   event.target.classList.add('hide')
+  // }, 0);
 
 };
 
@@ -47,6 +52,7 @@ zone1.ondrop = drop;
 zone2.ondrop = drop;
 
 function drop(event) {
+  event.target.classList.remove('hold', 'hide');
   let item = event.dataTransfer.getData('id');
   // console.log(item);
   try {

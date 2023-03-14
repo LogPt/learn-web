@@ -64,6 +64,10 @@ kbd {
   font-size: 24px;
 }
 
+.new {
+  color: rgb(81, 226, 159)
+}
+
 
 .footer {
   width: 100%;

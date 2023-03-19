@@ -1,0 +1,48 @@
+.card {
+  height: 160px;
+  width: 200px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #C1C1C1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.2ms ease-in;
+
+  &:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  }
+
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    height: 55px;
+    border-bottom: 1px solid #C1C1C1;
+  }
+
+  &__body {
+    padding: 20px 35px;
+
+    p {
+      text-align: center;
+      line-height: 1.2;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+
+}
+
+.card__title {
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card__title+* {
+  margin-top: 7px;
+}

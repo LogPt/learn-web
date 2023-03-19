@@ -1,0 +1,16 @@
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 20px;
+
+}
+
+.cards-wrapper>* {
+  flex-shrink: 0;
+}
+
+.cards-wrapper+* {
+  margin-top: 30px;
+}

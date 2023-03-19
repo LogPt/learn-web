@@ -1,0 +1,31 @@
+.button {
+
+  padding: 10px 40px;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  border: 1px solid #C1C1C1;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.2s ease-in background-color 0.2s ease-in border-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #e6e6e6;
+  }
+
+  @media (max-width: 680px) {
+    padding: 10px 20px;
+  }
+}
+
+.button-primary {
+  color: #ffffff;
+  background-color: #4486FB;
+  border-color: transparent;
+
+  &:hover {
+    background-color: #73a5fa;
+  }
+}

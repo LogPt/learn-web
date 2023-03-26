@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/template.css">
   <link rel="stylesheet" href="css/media.css">
@@ -15,13 +15,58 @@
 <body>
 
   <header class="header">
-    <h1 class="title">Изучаю Frontend (HTML, CSS, SCSS, JS)</h1>
+    <nav class="header__top">
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="#html-page">
+            HTML
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#css">
+            CSS
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#f0t1">
+            Курс верстки
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#site-layout">
+            Верстка
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#js-tasks">
+            Задачи на JS
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#5projects">
+            5 проектов на JS
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#js-practice">
+            Практика на JS
+          </a>
+        </li>
+
+
+      </ul>
+    </nav>
+
+
+    <h1 class="title header__title">
+      <p>Изучаю Frontend (HTML, CSS, SCSS, JS)</p>
+    </h1>
   </header>
 
   <main class="main">
 
     <!-- HTML -->
-    <section>
+    <section class="section-ligth" id="html-page">
       <h2 class="title subtitle">HTML-pages
       </h2>
       <ul class="main__list">
@@ -37,7 +82,7 @@
 
 
     <!-- Свойства CSS -->
-    <section>
+    <section id="css">
       <h2 class="title subtitle">Свойства CSS
       </h2>
       <ul class="main__list">
@@ -65,7 +110,7 @@
     </section>
 
     <!-- "From 0 to 1" -->
-    <section>
+    <section class="section-ligth" id="f0t1">
       <h2 class="title subtitle">Курс верстки "From 0 to 1"
       </h2>
       <ul class="main__list">
@@ -92,8 +137,8 @@
     </section>
 
     <!-- Верстка по макету и без -->
-    <section>
-      <h2 class="title subtitle">Верстка по макету и без</h2>
+    <section id="site-layout">
+      <h2 class="title subtitle">Верстка по макету и без макета</h2>
       <ul class="main__list">
 
         <li>
@@ -106,7 +151,7 @@
     </section>
 
     <!-- Мини-проекты и задачи на JS -->
-    <section>
+    <section class="section-ligth" id="js-tasks">
       <h2 class="title subtitle">Мини-проекты и задачи на JS</h2>
 
       <ul class="main__list">
@@ -126,10 +171,9 @@
     </section>
 
     <!-- Марафона: 5/5 -->
-    <section>
-      <h2 class="title subtitle"><a href="https://www.result.school/products/marathon-js">"Марафона: 5 дней - 5 проектов
-          на JS"</a></h2>
-
+    <section id="5projects">
+      <h2 class="title subtitle"><a href="https://www.result.school/products/marathon-js">"Марафон: 5 проектов на JS за
+          5 дней"</a> от <a href="https://www.youtube.com/@VladilenMinin">Владилена Минина</a></h2>
       <ul class="main__list">
         <li><a class="main__link new" href="./marathone5.5/m1-gallery/index.html">День 1. Галерея</a>
         </li>
@@ -146,13 +190,23 @@
       </ul>
     </section>
 
+    <!-- Практика на JS с Владиленом Мининым-->
+    <section class="section-ligth" id="js-practice">
+      <h2 class="title subtitle"><a href="https://youtu.be/KS2ngnRAKlg">Практика на JS</a> с
+        Владиленом Мининым</h2>
+      <ul class="main__list">
+        <li><a class="main__link new" href="https://podcast--app-8c1d0.firebaseapp.com/">Приложение на чистом JS (+
+            Webpack) с авторизацией без фреймворков</a>
+        </li>
+      </ul>
+    </section>
+
+    <a href="#">
+      <div class="arrow">
+      </div>
+    </a>
 
   </main>
-
-  <footer class="footer">
-
-  </footer>
-
 </body>
 
 </html>

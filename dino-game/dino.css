@@ -1,0 +1,152 @@
+body {
+  max-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.header {
+
+  text-align: center;
+  height: 120px;
+}
+
+.container {
+  margin: 35px auto;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100%;
+  /* height: calc (100% -50px);
+  width: 100%; */
+}
+
+.game {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  background-color: rgb(223, 223, 217);
+  border-bottom: 2px solid #267711;
+}
+
+.sun {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: yellow;
+  bottom: 80%;
+  left: 70%;
+}
+
+.control {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  border: 2px solid #267711;
+  border-radius: 8px;
+  transition: transform 0.7s ease-in-out;
+}
+
+.btn-start {}
+
+.btn-stop {
+  transform: translateX(-100vw);
+
+}
+
+.dino {
+  position: absolute;
+  bottom: 1px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  background-image: url(./img/dino3.png);
+  background-size: 70px 80px;
+}
+
+.cactus {
+  display: none;
+  position: absolute;
+  bottom: 1px;
+  left: 770px;
+  width: 30px;
+  min-height: 50px;
+  background-image: url(./img/cactus2.png);
+  background-size: 30px 50px;
+}
+
+.cactus-animated {
+  display: block;
+  animation: cactusMove1 2s infinite linear;
+}
+
+.cactus2 {
+  display: none;
+  left: -30px;
+  background-image: url(./img/cactus-emoji.png);
+}
+
+.cactus2-animated {
+  display: block;
+  animation: cactusMove2 2s infinite linear;
+}
+
+.jump {
+  animation: jump 700ms ease-out;
+}
+
+@keyframes cactusMove1 {
+  0% {
+    left: 770px;
+  }
+
+  100% {
+    left: -30px;
+  }
+}
+
+@keyframes cactusMove2 {
+  0% {
+    left: 400px;
+  }
+
+  50% {
+    left: -30px;
+  }
+
+  51% {
+    left: 770px
+  }
+
+  100% {
+    left: 400px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 1px;
+  }
+
+  30% {
+    bottom: 80px;
+  }
+
+  50% {
+    bottom: 110px;
+  }
+
+  80% {
+    bottom: 60px;
+  }
+
+  100% {
+    bottom: 1px;
+  }
+}

@@ -10,4 +10,5 @@ const options = {
   closable,
   width
 };
+
  const modal = $.modal(options);

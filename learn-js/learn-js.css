@@ -12,13 +12,70 @@ body {
 main {
   margin: 0 auto;
   text-align: center;
-  width: 50%;
+  width: 100%;
+
 }
 
 section {
+  min-height: 100vh;
+  border-bottom: 2px solid #fdf1b1;
 
-  margin-bottom: 10px;
+}
 
+.header {
+  height: 100vh;
+  border-bottom: 2px solid #fdf1b1;
+}
+
+.header__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 130%;
+  box-shadow: none;
+  color: rgb(77, 155, 116);
+}
+
+.menu__item {
+  border-bottom: 2px solid #fdf1b1;
+  border-radius: 5px;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.menu__item:hover {
+  cursor: pointer;
+  box-shadow: 1px;
+  color: rgb(46, 96, 71);
+}
+
+.header__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  height: 100%;
+  margin: 30px auto;
 }
 
 
@@ -74,7 +131,7 @@ button {
 .result {
   margin: 10px;
   padding: 10px;
-  border: 5px solid;
+  border: 2px solid;
   border-color: orange;
 }
 

@@ -3,8 +3,6 @@ let count = 0;
 
 const headerElement = document.querySelector('h1');
 const headerElementContent = headerElement.innerHTML;
-headerElement.innerHTML = 'Урок-упражнение </br>' + headerElementContent;
-
 const messageElement = document.querySelector('.message');
 messageElement.innerHTML = `<p>Задан массив: ${array}</br> Введите число для поиска </p>`;
 
@@ -18,23 +16,15 @@ formElement.append(newInput);
 formElement.append(newButton);
 
 const resultElement = document.querySelector('.result');
-// const newResult = document.createElement('div');
-// newResult.className = "divresult";
+
 resultElement.innerHTML = '<p>Здесь будет результат поиска</p>';
 
 newButton.addEventListener("click", function () {
-    // const resultBlock = document.querySelector('.divresult');
-    // // console.log(resultBlock);
-    // if (!(resultBlock == null)) {
-    //     resultBlock.remove();
-    // }
+
     count = 0;
     let item = newInput.value;
     if (isNumber(Number(newInput.value))) {
-        // console.log("Введено число ", item);
         let i = linearSearch(array, item);
-        // console.log("Позиция ", i);
-        // console.log(count);
         resultOutput(i, item);
     }
     else {
@@ -63,10 +53,6 @@ function errorOutput(item) {
 }
 
 function linearSearch(array, item) {
-    // console.log('задан массив ', array);
-    // console.log('длина массива ', array.length);
-    // console.log('ищем число ', item);
-
     for (let i = 0; i < array.length; i++) {
         count += 1;
         if (array[i] == item) {
